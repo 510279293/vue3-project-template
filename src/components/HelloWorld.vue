@@ -3,8 +3,8 @@ import { useCounterStore } from '@/stores/counter'
 import { login } from '@/api'
 const counter = useCounterStore()
 counter.count++
-const add = () => counter.$patch({count: counter.count + 1})
-const sub = () => counter.$patch({count: counter.count - 1})
+// const add = () => counter.$patch({count: counter.count + 1})
+// const sub = () => counter.$patch({count: counter.count - 1})
 const add1 = () => counter.increment()
 const sub1 = () => counter.count--
 defineProps<{
