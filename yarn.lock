@@ -829,6 +829,16 @@
     "@typescript-eslint/types" "5.60.1"
     eslint-visitor-keys "^3.3.0"
 
+"@vant/popperjs@^1.3.0":
+  version "1.3.0"
+  resolved "http://192.168.8.141:4873/@vant%2fpopperjs/-/popperjs-1.3.0.tgz#e0eff017124b5b2352ef3b36a6df06277f4400f2"
+  integrity sha512-hB+czUG+aHtjhaEmCJDuXOep0YTZjdlRR+4MSmIFnkCQIxJaXLQdSsR90XWvAI2yvKUI7TCGqR8pQg2RtvkMHw==
+
+"@vant/use@^1.5.1":
+  version "1.5.2"
+  resolved "http://192.168.8.141:4873/@vant%2fuse/-/use-1.5.2.tgz#d1877f293e6d1a0a8428d3d3f4b587a3f745324d"
+  integrity sha512-CBK61iT568dCHUwFFsErGbW6/5tmrPnZJKGtcSy7Tjcrmws8Ku+YZo7IUFD9Xkj9MfSJ4pfhQ7pU2KouP5Cojg==
+
 "@vitejs/plugin-vue-jsx@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue-jsx/-/plugin-vue-jsx-3.0.1.tgz#4c088ce445e34ae27e78a66e6dbf2cc2e85f827d"
@@ -1005,7 +1015,7 @@
     "@vue/compiler-ssr" "3.3.4"
     "@vue/shared" "3.3.4"
 
-"@vue/shared@3.3.4", "@vue/shared@^3.3.0":
+"@vue/shared@3.3.4", "@vue/shared@^3.0.0", "@vue/shared@^3.3.0":
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.3.4.tgz#06e83c5027f464eef861c329be81454bc8b70780"
   integrity sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==
@@ -2712,6 +2722,11 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
+object-assign@>=4.0.1:
+  version "4.1.1"
+  resolved "http://192.168.8.141:4873/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
+
 object-inspect@^1.12.3, object-inspect@^1.9.0:
   version "1.12.3"
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.3.tgz#ba62dffd67ee256c8c086dfae69e016cd1f198b9"
@@ -2891,6 +2906,14 @@ pinia@^2.1.3:
     "@vue/devtools-api" "^6.5.0"
     vue-demi ">=0.14.5"
 
+postcss-px-to-viewport@^1.1.1:
+  version "1.1.1"
+  resolved "http://192.168.8.141:4873/postcss-px-to-viewport/-/postcss-px-to-viewport-1.1.1.tgz#a25ca410b553c9892cc8b525cc710da47bf1aa55"
+  integrity sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ==
+  dependencies:
+    object-assign ">=4.0.1"
+    postcss ">=5.0.2"
+
 postcss-selector-parser@^6.0.9:
   version "6.0.13"
   resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.13.tgz#d05d8d76b1e8e173257ef9d60b706a8e5e99bf1b"
@@ -2899,7 +2922,7 @@ postcss-selector-parser@^6.0.9:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
-postcss@^8.1.10, postcss@^8.4.23:
+postcss@>=5.0.2, postcss@^8.1.10, postcss@^8.4.23:
   version "8.4.24"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.24.tgz#f714dba9b2284be3cc07dbd2fc57ee4dc972d2df"
   integrity sha512-M0RzbcI0sO/XJNucsGjvWU9ERWxb/ytp1w6dKtxTKgixdtQDq4rmx/g8W1hnaheq9jgwL/oyEdH5Bc4WwJKMqg==
@@ -3485,6 +3508,15 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+vant@^4.6.0:
+  version "4.6.0"
+  resolved "http://192.168.8.141:4873/vant/-/vant-4.6.0.tgz#5c0279fd34271f2cf8eaf8cb45cad6094c4d7b81"
+  integrity sha512-MUwf/SLhI9FPRM12snI9CAUlowlS0LK3SquBZpEKbsIYijAZg0DfH1rAOnLfuQ3kgXCM8HnlCmeELaezT7X7nA==
+  dependencies:
+    "@vant/popperjs" "^1.3.0"
+    "@vant/use" "^1.5.1"
+    "@vue/shared" "^3.0.0"
 
 vite@^4.3.9:
   version "4.3.9"

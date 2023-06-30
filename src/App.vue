@@ -1,17 +1,12 @@
 <template>
   <main>
-    <router-link to="/">
-      home
-    </router-link>
-    <router-link to="/about">
-      about
-    </router-link>
     <RouterView />
+    <MenuTabbar />
   </main>
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import MenuTabbar from '@/components/MenuTabbar.vue'
 </script>
 
 <style scoped></style>

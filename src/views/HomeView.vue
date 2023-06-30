@@ -1,12 +1,15 @@
-<script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
-import { useCounterStore } from '@/stores/counter'
-const counter = useCounterStore()
-</script>
-
 <template>
-  <main>
-    <div>{{counter.count}} 看吧，子组件变动我会更新</div>
-    <HelloWorld msg="hello " />
-  </main>
+  <div class="home">
+    <h1>This is an home page</h1>
+  </div>
 </template>
+
+<style>
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>

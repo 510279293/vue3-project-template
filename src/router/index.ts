@@ -1,19 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 // 路由懒加载
-const HomeView = () => import('@/views/HomeView.vue')
-const About = () => import('@/views/AboutView.vue')
+const Home = () => import('@/views/HomeView.vue')
+const Mine = () => import('@/views/MineView.vue')
+const Order = () => import('@/views/OrderView.vue')
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/home',
+    component: Home
   },
   {
-    path: '/about',
-    name: 'about',
-    component: About
+    path: '/order',
+    name: 'order',
+    component: Order
+  },
+  {
+    path: '/mine',
+    name: 'mine',
+    component: Mine
+  },
+  {
+    path: '/:catchALL(.*)',
+    redirect: '/404',
+    hidden: true
   }
 ]
 
